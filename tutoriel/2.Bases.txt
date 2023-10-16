@@ -1,0 +1,70 @@
+______________VARIABLES________________
+
+1.nom_variable ="chaine"
+print("je m'appelle " + nom_variable)
+
+2.variable dynamique
+nom = input("Quels es votre nom");
+
+
+______________DEBUT et FIN_____________
+la tabulation est en forme de tabulation
+
+
+______________COMMENTAIRES_____________
+#Ceci est un commantaire en placeant un diese 
+
+
+
+______________CONVERSION_______________
+1.type(nom)
+=> on obtient le type, int ou str
+
+2.si vous avez
+age = 24
+print("j'ai "+age)
+
+il ya erreur faut faire
+print("j'ai "+ str(age))
+
+3.conversion str en int 
+int(age)
+
+4.gerer erreur nombre :
+il est vraiment important de respecter la tabulation
+
+    try:
+        age_prochain = int(age) + 1
+    except ValueError:
+        print("ENTRER UN NOMBRE")
+    else:
+    print("je sui "+str(age_prochain))  
+
+ 
+______________BOUCLE WHILE_________________
+1.continue a demande le mot de passe tant que seulement ci = ENZO
+    mot_passe=""
+    while not mot_passe == "ENZO":
+        mot_passe = input("DOnner votre mot de passe ") 
+
+2. Affiche 0 ->5
+    n=0
+    while n<5:
+        print("valeur "+ str(n))
+        n = n +1
+
+3.continuer a demandez si on obtient un type int
+
+4.demander un nom non vide
+    name = ""
+    while  name == "":
+        name = input("Donnez moi votre nom ? ... ") 
+
+
+______________DEBUGERR_________________
+1.mettre le point d'arret , avec un point rouge
+
+2.ne pas mettre play mais DEBBUGIN
+
+
+

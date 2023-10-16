@@ -1,0 +1,16 @@
+1. allez dans le python.org
+
+2.Download Python 
+
+3.Vous n'installez pas python par windows Store en windows
+s'il est deja installe, alors desinstaller le
+
+4.pout tester , allez en cmd puis python --version
+
+____________IDE_________________
+1.Pycharm est un editeur pour python et installer
+
+2.Visual Studio
+    -extension : magicImport
+    -pourt tester: fair un print("hello"); puis cliquer sur play
+    -pip install pylint (installation linter, gestion d'erreur) ou Linter pylint
