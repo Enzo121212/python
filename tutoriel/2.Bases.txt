@@ -6,6 +6,28 @@ print("je m'appelle " + nom_variable)
 2.variable dynamique
 nom = input("Quels es votre nom");
 
+3.affichage chaine
+    a-print(f"votre nom est {nom} et votre age est {age}") // n'oublier pas f avant la chaine
+    b-print("votre nom est "+ nom + " et votre age est "+ str(age))
+    c-print("votre nom est %s et votre age est %s" % (nom,age)) //n'oublier pas % et s
+    d-print(f"votre nom est",nom," et votre age est",age)
+
+4.affichage plusieur ligne
+
+print(""" 
+Name = jklmre
+        jklmjkm e 
+        azejkl
+
+        fezakflemùzk
+""")
+
+5.Types
+    a = “Bonjour“   # chaine de caractères : str
+    b = 5           # nombre entier : int
+    c = 1.5         # nombre à virgules : float
+    d = True        # True ou False : bool 
+
 
 ______________DEBUT et FIN_____________
 la tabulation est en forme de tabulation
@@ -41,7 +63,7 @@ il est vraiment important de respecter la tabulation
     print("je sui "+str(age_prochain))  
 
  
-______________BOUCLE WHILE_________________
+______________BOUCLE _________________
 1.continue a demande le mot de passe tant que seulement ci = ENZO
     mot_passe=""
     while not mot_passe == "ENZO":
@@ -60,11 +82,142 @@ ______________BOUCLE WHILE_________________
     while  name == "":
         name = input("Donnez moi votre nom ? ... ") 
 
+5.BOUCLE FOR
+    for i in range(0, 5):
+        print(i)
 
 ______________DEBUGERR_________________
 1.mettre le point d'arret , avec un point rouge
 
 2.ne pas mettre play mais DEBBUGIN
+
+______________FONCTIONS________________
+1.sans parametre
+def nom_function():
+    -
+    -
+    -
+    return ''
+
+2.avec parametre et parametre optionnel
+    def nom_function(parametre, param_optionnele = 0)
+        -
+        -
+        return 0
+
+3.return plusieurs parametre
+    def test(fe):
+        return fe,'ko'
+
+    ko ,ok = test('fe')
+
+4.specifier le type et le type de retour
+    def is_majeur(age: int, name: str) =>bool :
+
+5.fonction recursive
+    a.def a(n,limit):
+        if(n>limit):
+            return 
+        a(n,limit)
+    
+    b.focer a entrer min et nbr_max
+        def minmax(min , max)
+            n = input("entrer entre min et max)
+            if(n> min and n< max ):
+                return n
+            return minmax(min, max)
+
+6.Callback
+
+    def a(a,b):
+        return a*b
+    c = a
+
+    print(c) # ne retourne rien , il dit que c'est simplement un fonction
+    print(c(1,5)) #si on met u n paramettre ou parenthese alors il va retourner
+
+    --------------------------
+    def table_multiplication(n, str_operateur, callback_function):
+        for i in range(1,10):
+            print(i,str_operateur,n, " = ", callback_function(i, n))
+
+    def addition(a,b):
+        return a+b
+
+    def multiplication(a,b):
+        return a*b 
+
+    def puissance(a,b):
+        return pow(a,b)
+
+    table_multiplication(4 , '+', addition)
+
+    table_multiplication(4 , '*', multiplication)
+
+    table_multiplication(4 , '*', puissance)
+
+7.lambas: sans function call back mais tou de suit l operation
+
+    table_multiplication(4 , '+', lambda a , b : a+b)
+
+    table_multiplication(4 , '*', lambda a,b : a*b)
+
+    table_multiplication(4 , '*', lambda a,b : pow(a,b))
+
+8.plusieurs parametre
+a . un etoile    
+def somme(*nombres):
+    res=0
+    for i in nombres:
+        res +=i
+    return res
+somme(1,2,3,4,3,5,)
+
+b.deux etoiles
+def somme(**nombres):
+    res=0
+    for i in nombres.values():
+        res +=i
+    return res
+
+print(somme(a=2,b=5,c=4))
+
+
+
+______________GLOBAL VARIABLE________
+ge = 30;
+
+def globalVariable():
+    global age;
+    age = age + 3
+
+globalVariable()
+
+print(age) //33
+
+
+______________CONDITION_______________
+1.
+    age = 1
+    if age >= 18:
+        print("MAJEUR")
+    elif age == 17:
+        print("PRESQUE MAJEUR")
+    elif age < 12 :
+        print("ENFANT")
+    elif age == 2 or age == 1 :
+        print("Nouveau nne")
+    elif age >= 12  and age < 17:
+        print("ADOLESCENT")
+    else:
+        print("MINEUR")
+
+______________RANDOM_________________
+
+import random
+random = random.randint(nbr_min, nbr_max)
+
+
 
 
 

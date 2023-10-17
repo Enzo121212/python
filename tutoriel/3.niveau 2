@@ -1,0 +1,87 @@
+--------------------------------------
+            OBJETS 
+--------------------------------------
+
+______________TUPLES___________________
+
+Ceci est immutable, c'est a dire on peut pas modifier ni ajouter ni supprimer$
+
+les tuples sont en parenthese
+
+person = ('Miora','Todisoa','Fabienne','Fabienne2','Avana','Mbola','Nadya','boska','Hasina','Hasina2','Ranto','Felana','Mampionina','Tana','Nandrianina','Patsy','Princia','Lova','Sarah','Kanto');
+
+print(len(person)) #17 nombre d'element
+
+print(len("princia")) #7 nombre dans le chaine de caracter
+
+print(person[0]) #afficher le premier element
+
+print(person[-1]) #afficher le dernier element
+
+print(person[-2]) #afficher avant dernier
+
+for i in range(0 , len(person)):
+    print(person[i])
+
+for i in person:
+    print(i)
+
+______________LISTES_______________
+Cecit est mutable , on peut faire un CRUD
+
+les listes sont presenter par des crochets
+
+person =["Henintsoa", "Mado" , "Sophie" , "Sariaka"]
+
+#ajouter
+person.append("ravaka")
+
+#supprimer
+del person[0]
+
+#modifier
+person[0]="Olivia"
+
+#affichage
+for i in person:
+    print(i)
+
+
+______________FONCTION ET TUPLE_______
+recuperer un tuple par un fonction
+
+1.Creation tuple par fonction
+def information():
+    return "Lova",50,"Tananarivo"
+
+print(information()) #('Lova', 50, 'Tananarivo')
+
+2.recuperation par crochet
+info = information()
+
+print(info[0]) #lova
+print(info[1]) #50
+print(info[2]) #Tananrivo
+
+3.donne un nom de variable
+nom , age , adresse = information()
+
+print(nom)#lova
+print(age)#50
+print(adresse)#Tananrivo
+
+4.mettre un tuple en parametre
+
+
+def afficherInformation(nom,age,adresse):
+    print(f"je m'appelle {nom}, j'ai {age}, j'habite a {adresse}")
+    
+info = information()
+
+print(*info) // lova 50 tananarivo
+
+afficherInformation(*info) #je m'appelle Lova, j'ai 50, j'habite a Tananarivo
+
+
+______________SLLICES__________________
+Decoupe un tuples ou liste
